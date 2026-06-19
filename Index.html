@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector y Guardado de Código</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guardar Snippet de Código</h1>
+        
+        <div class="form-group">
+            <label for="languageSelect">Lenguaje de Programación:</label>
+            <select id="languageSelect">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="HTML/CSS">HTML/CSS</option>
+                <option value="Java">Java</option>
+                <option value="C++">C++</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="codeArea">Pega tu Código aquí:</label>
+            <textarea id="codeArea" placeholder="// Escribe o pega tu código aquí..."></textarea>
+        </div>
+
+        <button id="submitBtn">Enviar a la Hoja de Cálculo</button>
+        
+        <div id="statusMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
